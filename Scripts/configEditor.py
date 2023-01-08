@@ -93,7 +93,7 @@ def Main():
     data = json.load(f)
     f.close()
     os.system('cls')
-    print(Colors.RESET + "Collection: " + Colors.CYAN + data['collection'])
+    print(Colors.RESET + "Collection: " + Colors.CYAN + data['collection'][1:])
     if data['save_all_new']:
         print(Colors.RESET + '1    Save New Backgrounds: ' + Colors.GREEN + "TRUE")
     else:
